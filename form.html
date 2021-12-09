@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10b4bccee0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Linkedog</title>
+</head>
+<!-- Application de la grille sur l'entièreté du site
+Celui-ci est reparti en 4 parties. 
+Header - Hero - Content - Footer -->
+<body class="container">
+
+    <!-- Wrapper qui centre les div dedans et applique un width qui sert de marge -->
+    <header class="header wrapper">
+        <section class="header__logo">
+            <a class="header__link" href="index.html">Linkedog</a>
+        </section>
+        <section class="header__desc">
+            <h1 class="header__heading">Propriétaires, trouvez dès maintenant un dogsitter près de chez vous <span class="header__heading--db">Dogsitter, maximiser vos chances d’être retenus pour une mission</span></h1>
+        </section>
+    </header>
+
+<!-- Hero Header -->
+    <section class="hero">
+        <h2 class="hero__heading">Trouvez un dogsitter près de chez vous !</h2>
+    </section>
+
+<!-- Contenu principal du site, partionné en deux parties -->
+<main class="content">
+    <section class="p1 wrapper">
+
+        <form class="form" action="search.html">
+            <article class="hebergement">
+                <div class="hebergement__address">
+                    <label for="address" class="hebergement__label">Hébergement à proximité de :</label>
+                    <input type="address" id="address" placeholder="Code postal ou ville" class="hebergement__input">
+                </div>
+
+                <div class="hebergement__date">
+                    <label for="date" class="hebergement__label">Pour ces jours :</label>
+                    <input type="date" id="date" class="hebergement__input">
+
+                    <label for="date_second" class="hebergement__label--arrow">à</label>
+                    <input type="date" id="date_second" class="hebergement__input">
+                </div>
+            </article>
+
+            <article class="pet">
+                <label class="pet__label">La taille de mon chien :</label>
+                <div class="pet__list">
+                    <div class="pet__small">
+                        <input class="pet__radio" type="radio" id="small" name="size" value="Petit : 0 - 7 kg">
+                        <label class="pet__label--radio" for="small">Petit : 0 - 7 kg</label>
+                    </div>
+    
+                    <div class="pet__medium">
+                        <input class="pet__radio" type="radio" id="medium" name="size" value="Moyen : 7 - 18 kg">
+                        <label class="pet__label--radio" for="medium">Moyen : 7 - 18 kg</label>
+                    </div>
+    
+                    <div class="pet__large">
+                        <input class="pet__radio" type="radio" id="large" name="size" value="Grand : 18 - 45 kg">
+                        <label class="pet__label--radio" for="large">Grand : 18 - 45 kg</label>
+                    </div>
+    
+                    <div class="pet__xl">
+                        <input class="pet__radio" type="radio" id="xl" name="size" value="Géant : + 45 kg">
+                        <label class="pet__label--radio" for="xl">Géant : + 45 kg</label>
+                    </div>
+                </div>
+            </article>
+
+            <div class="pet__accept">
+                <button class="pet__btn">Recherchez</button>
+            </div>
+            
+        </form>
+
+    
+    </section>
+
+    <section class="p2">
+        <div class="wrapper">
+            <h2 class="picto__heading picto__heading--tc">Des services à la carte</h2>
+            <div class="picto-list">
+                <article class="picto">
+                    <h2 class="picto__heading picto__heading--dog">Hébergement pour chien</h2>
+                    <p class="picto__content">Si vous avez besoin de faire garder votre chien une ou plusieurs nuits.</p>
+                </article>
+                
+                <article class="picto">
+                    <h2 class="picto__heading picto__heading--bone">Promenade de chien</h2>
+                    <p class="picto__content">À chaque fois que votre chien a besoin d’une promenade.</p>
+                </article>
+                
+                <article class="picto">
+                    <h2 class="picto__heading picto__heading--door">Visites à domicile</h2>
+                    <p class="picto__content">Pratique pour des pauses jeux et vérifier si tout va bien.</p>
+                </article>
+                <article class="picto">
+                    <h2 class="picto__heading picto__heading--home">Garde à domicile</h2>
+                    <p class="picto__content">Idéal si vous avez besoin d’une garde d’animaux à votre domicile.</p>
+                </article>
+                
+                <article class="picto">            
+                    <h2 class="picto__heading picto__heading--castle">Garderie pour chien</h2>
+                    <p class="picto__content">Garde de chien en journée, au domicile sécurisé du dog sitter.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+    
+<footer class="footer">
+    <section class="wrapper">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Contactez-nous</a></li>
+                <li><a href="#" class="footer__link">Devenez dogsitter</a></li>
+                <li><a href="#" class="footer__link">Comment ça marche</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Facebook</a></li>
+                <li><a href="#" class="footer__link">Instagram</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Espace connexion dogsitter</a></li>
+                <li><a href="#" class="footer__link">Créer, modifier mon profil</a></li>
+            </ul>
+        </nav>
+    </section>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10b4bccee0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Linkedog</title>
+</head>
+<!-- Application de la grille sur l'entièreté du site
+Celui-ci est reparti en 4 parties. 
+Header - Hero - Content - Footer -->
+<body class="container">
+
+    <!-- Wrapper qui centre les div dedans et applique un width qui sert de marge -->
+    <header class="header wrapper">
+        <section class="header__logo">
+            <a class="header__link" href="index.html">Linkedog</a>
+        </section>
+        <section class="header__desc">
+            <h1 class="header__heading">Propriétaires, trouvez dès maintenant un dogsitter près de chez vous <span class="header__heading--db">Dogsitter, maximiser vos chances d’être retenus pour une mission</span></h1>
+        </section>
+    </header>
+
+    <!-- Hero Header -->
+    <div class="hero">
+        <h2 class="hero__heading">Les dogsitter près de chez vous</h2>
+    </div>
+
+    <!-- Contenu principal du site, partionné en deux parties -->
+    <main class="content">
+        <section class="p1 wrapper dogsitters-grid">
+                    <map class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.56656511466!2d3.065329415901104!3d50.63516818191845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58941cbf8df%3A0x9486eb65d5dd57d7!2s57%20Rue%20Pierre%20Mauroy%2C%2059800%20Lille!5e0!3m2!1sfr!2sfr!4v1633187278605!5m2!1sfr!2sfr"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </map>
+
+                    <article class="dogsitters">
+                        <div class="dogsitters__info">
+                            <img class="dogsitters__img" src="assets/img/avatar/dogsitter_083497_098.jpg" alt="Photo dogsitter">
+
+                            <aside class="dogsitters__pos">
+                                <h2 class="dogsitters__heading">Ville - CP</h2>
+                                <h3 class="dogsitters__subheading">A partir de <strong>21 € par nuit</strong></h3>
+                            </aside>
+                        </div>
+
+                        <div class="dogsitters__desc">
+                            <h2 class="dogsitters__heading">Nom dogsitter</h2>
+                            <p class="dogsitters__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc.</p>
+
+                            <h2 class="dogsitters__heading">Avis</h2>
+                            <p class="dogsitters__content">« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odionunc. »</p>
+                        </div>
+                    </article>
+
+                    <article class="dogsitters">
+                        <div class="dogsitters__info">
+                            <img class="dogsitters__img" src="assets/img/avatar/dogsitter_083497_098.jpg" alt="Photo dogsitter" loading="lazy">
+
+                            <aside class="dogsitters__pos">
+                                <h2 class="dogsitters__heading">Ville - CP</h2>
+                                <h3 class="dogsitters__subheading">A partir de <strong>21 € par nuit</strong></h3>
+                            </aside>
+                        </div>
+
+                        <div class="dogsitters__desc">
+                            <h2 class="dogsitters__heading">Nom dogsitter</h2>
+                            <p class="dogsitters__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc.</p>
+
+                            <h2 class="dogsitters__heading">Avis</h2>
+                            <p class="dogsitters__content">« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odionunc. »</p>
+                        </div>
+                    </article>
+        </section>
+    </main>
+        
+    <footer class="footer">
+        <section class="wrapper">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Contactez-nous</a></li>
+                    <li><a href="#" class="footer__link">Devenez dogsitter</a></li>
+                    <li><a href="#" class="footer__link">Comment ça marche</a></li>
+                </ul>
+    
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Facebook</a></li>
+                    <li><a href="#" class="footer__link">Instagram</a></li>
+                </ul>
+    
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Espace connexion dogsitter</a></li>
+                    <li><a href="#" class="footer__link">Créer, modifier mon profil</a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    
+</body>
+</html>

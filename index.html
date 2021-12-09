@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10b4bccee0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Linkedog</title>
+</head>
+<!-- Application de la grille sur l'entièreté du site
+Celui-ci est reparti en 4 parties. 
+Header - Hero - Content - Footer -->
+<body class="container">
+
+    <!-- Wrapper qui centre les div dedans et applique un width qui sert de marge -->
+    <header class="header wrapper">
+        <section class="header__logo">
+            <a class="header__link" href="index.html">Linkedog</a>
+        </section>
+        <section class="header__desc">
+            <h1 class="header__heading">Propriétaires, trouvez dès maintenant un dogsitter près de chez vous <span class="header__heading--db">Dogsitter, maximiser vos chances d’être retenus pour une mission</span></h1>
+        </section>
+    </header>
+
+<!-- Hero Header, contient l'image du site à mettre en avant' -->
+    <section class="hero">
+        <a class="hero__link" href="form.html">Trouvez un dogsitter près de chez vous !</a>
+    </section>
+
+<!-- Contenu principal du site, partionné en deux parties -->
+<main class="content">
+    <!-- On applique le wrapper sur la partie 1 qui contient la classe cards-list, appliquant notre grille CSS spécifique pour le placement de nos cards -->
+    <section class="p1 wrapper cards-list">
+            <article class="cards">
+                <h2 class="cards__heading">Recevez des photos de votre chien</h2>
+                <p class="cards__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc. </p>
+                <button class="cards__btn">En savoir plus</button>
+            </article>
+    
+            <article class="cards">
+                <h2 class="cards__heading">Des tarifs clairs en accord avec la prestation</h2>
+                <p class="cards__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc. </p>
+                <button class="cards__btn">En savoir plus</button>
+            </article>
+    
+            <article class="cards">
+                <h2 class="cards__heading">Assurance et sécurité</h2>
+                <p class="cards__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc. </p>
+                <button class="cards__btn">En savoir plus</button>
+            </article>
+    </section>
+
+    <!-- Partie deux de la grille CSS contenant le contenu principal (content), celle ci ne possède pas de wrapper appliqué directement dans la section 
+    car celui-ci gêne pour la mise en place d'un background, nous l'appliquons donc (le wrapper) dans une div séparé -->
+    <section class="p2">
+        <div class="wrapper faqs-list">
+            <article class="faqs">
+                <h2 class="faqs__heading">Recevez des photos de votre chien</h2>
+                <p class="faqs__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc. </p>
+            </article>
+    
+            <article class="faqs">
+                <h2 class="faqs__heading">Des tarifs clairs en accord avec la prestation</h2>
+                <p class="faqs__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc. </p>
+            </article>
+    
+            <article class="faqs">
+                <h2 class="faqs__heading">Assurance et sécurité</h2>
+                <p class="faqs__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu diam lacus. Donec odio nunc. </p>
+            </article>
+        </div>
+    </section>
+</main>
+    
+<footer class="footer">
+    <section class="wrapper">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Contactez-nous</a></li>
+                <li><a href="#" class="footer__link">Devenez dogsitter</a></li>
+                <li><a href="#" class="footer__link">Comment ça marche</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Facebook</a></li>
+                <li><a href="#" class="footer__link">Instagram</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Espace connexion dogsitter</a></li>
+                <li><a href="#" class="footer__link">Créer, modifier mon profil</a></li>
+            </ul>
+        </nav>
+    </section>
+</footer>
+
+</body>
+</html>
